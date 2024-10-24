@@ -1,27 +1,27 @@
-standard library package ISQMechanics {
+standard library package Mechanics {
     doc
     /*
      * International System of Quantities and Units
      * Generated on 2022-08-07T14:44:27Z from standard ISO-80000-4:2019 "Mechanics"
      * see also https://www.iso.org/obp/ui/#iso:std:iso:80000:-4:ed-2:v1:en
-     * 
+     *
      * Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,
      * with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.
-     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is 
-     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system) 
+     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is
+     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)
      * or TensorMeasurementReference.
      */
 
     private import ScalarValues::Real;
     private import Quantities::*;
     private import MeasurementReferences::*;
-    private import ISQBase::*;
+    private import ISQ::Base::*;
 
     /* Quantity definitions referenced from other ISQ packages */
     private import ISQThermodynamics::EnergyValue;
 
     /* ISO-80000-4 item 4-1 mass */
-    /* See package ISQBase for the declarations of MassValue and MassUnit */
+    /* See package ISQ::Base for the declarations of MassValue and MassUnit */
 
     /* ISO-80000-4 item 4-2 mass density, density */
     attribute def MassDensityValue :> ScalarQuantityValue {

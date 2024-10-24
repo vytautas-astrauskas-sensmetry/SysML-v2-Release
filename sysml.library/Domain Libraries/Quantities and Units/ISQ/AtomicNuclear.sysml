@@ -1,27 +1,27 @@
-standard library package ISQAtomicNuclear {
+standard library package AtomicNuclear {
     doc
     /*
      * International System of Quantities and Units
      * Generated on 2022-08-07T14:44:27Z from standard ISO-80000-10:2019 "Atomic and nuclear physics"
      * see also https://www.iso.org/obp/ui/#iso:std:iso:80000:-10:ed-2:v1:en
-     * 
+     *
      * Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,
      * with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.
-     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is 
-     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system) 
+     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is
+     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)
      * or TensorMeasurementReference.
      */
 
     private import ScalarValues::Real;
     private import Quantities::*;
     private import MeasurementReferences::*;
-    private import ISQBase::*;
+    private import ISQ::Base::*;
 
     /* Quantity definitions referenced from other ISQ packages */
-    private import ISQChemistryMolecular::DiffusionCoefficientUnit;
-    private import ISQChemistryMolecular::DiffusionCoefficientValue;
-    private import ISQChemistryMolecular::diffusionCoefficient;    
-    private import ISQElectromagnetism::ElectricChargeValue;
+    private import ChemistryMolecular::DiffusionCoefficientUnit;
+    private import ChemistryMolecular::DiffusionCoefficientValue;
+    private import ChemistryMolecular::diffusionCoefficient;
+    private import Electromagnetism::ElectricChargeValue;
     private import ISQSpaceTime::AngularFrequencyValue;
     private import ISQSpaceTime::AreaValue;
     private import ISQThermodynamics::EnergyValue;
@@ -2008,7 +2008,7 @@ standard library package ISQAtomicNuclear {
     }
 
     /* ISO-80000-10 item 10-64 diffusion coefficient, diffusion coefficient for particle number density */
-    /* Refer to declaration for DiffusionCoefficient in ISQChemistryMolecular item 9-39 diffusion coefficient */
+    /* Refer to declaration for DiffusionCoefficient in ChemistryMolecular item 9-39 diffusion coefficient */
 
     alias DiffusionCoefficientForParticleNumberDensityUnit for DiffusionCoefficientUnit;
     alias DiffusionCoefficientForParticleNumberDensityValue for DiffusionCoefficientValue;

@@ -8,8 +8,8 @@ standard library package SI {
 	 */
 
     private import MeasurementReferences::*;
-    public import ISQ::*;
-    public import SIPrefixes::*;
+    private import ISQ::*;
+    public extern package Prefixes;
 
     /*
      * SI simple unit needed in support of creation of the base units
@@ -322,16 +322,16 @@ standard library package SI {
     /* Speed */
     attribute <'km/h'> 'kilometre per hour': SpeedUnit = km/h;
 
-	/* 
+	/*
 	 * Celsius units
 	 */
-	 
+
     attribute <'°C'> 'degree celsius (temperature difference)' : TemperatureDifferenceUnit {
     	doc
 	    /*
 	     * degree Celsius unit for temperature interval (i.e. temperature difference) quantities
 	     */
-	     
+
         attribute :>> unitConversion: ConversionByConvention { :>> referenceUnit = K; :>> conversionFactor = 1; }
    	}
 
@@ -340,10 +340,10 @@ standard library package SI {
 	     /*
 	     * degree Celsius interval scale for absolute (thermodynamic) temperature quantities
 	     *
-	     * The interval scale is defined with an explicit transformation with respect to 
+	     * The interval scale is defined with an explicit transformation with respect to
 	     * the kelvin thermodynamic temperature scale that specifies the zero shift.
 	     */
- 
+
         attribute :>> unit = '°C';
         attribute temperatureWaterAtFreezingPointInC: DefinitionalQuantityValue {
             :>> num = 0; :>> definition = "temperature in degree Celsius of pure water at freezing point";
@@ -352,7 +352,7 @@ standard library package SI {
             :>> num = 1/100; :>> definition = "temperature in degree Celsius of pure water at the triple point";
         }
         private attribute celsiusToKelvinScaleMapping: QuantityValueMapping {
-            :>> mappedQuantityValue = temperatureWaterAtTriplePointInC; 
+            :>> mappedQuantityValue = temperatureWaterAtTriplePointInC;
             :>> referenceQuantityValue = K.temperatureOfWaterAtTriplePointInK;
         }
         attribute :>> definitionalQuantityValues = (temperatureWaterAtTriplePointInC, temperatureWaterAtFreezingPointInC);
@@ -360,7 +360,7 @@ standard library package SI {
 
         /* CoordinateFramePlacement (zero shift) w.r.t. the kelvin thermodynamic temperature scale */
         private attribute zeroDegreeCelsiusInKelvin: ThermodynamicTemperatureValue = 273.15 [K];
-        attribute zeroDegreeCelsiusToKelvinShift : CoordinateFramePlacement :>> transformation { 
+        attribute zeroDegreeCelsiusToKelvinShift : CoordinateFramePlacement :>> transformation {
         	:>> source = K; :>> origin = zeroDegreeCelsiusInKelvin;
         }
     }

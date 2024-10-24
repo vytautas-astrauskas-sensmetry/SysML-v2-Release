@@ -1,4 +1,4 @@
-standard library package ISQAcoustics {
+standard library package Acoustics {
     doc
     /*
      * International System of Quantities and Units
@@ -15,17 +15,17 @@ standard library package ISQAcoustics {
     private import ScalarValues::Real;
     private import Quantities::*;
     private import MeasurementReferences::*;
-    private import ISQBase::*;
+    private import ISQ::Base::*;
 
     /* Quantity definitions referenced from other ISQ packages */
-    private import ISQMechanics::PowerValue;
-    private import ISQMechanics::PressureValue;
-    private import ISQSpaceTime::CartesianSpatial3dCoordinateFrame;
-    private import ISQSpaceTime::SpeedValue;
-    private import ISQSpaceTime::CartesianVelocity3dCoordinateFrame;
-    private import ISQSpaceTime::AccelerationValue;
-    private import ISQSpaceTime::CartesianAcceleration3dCoordinateFrame;
-    private import ISQThermodynamics::EnergyValue;
+    private import ISQ::Mechanics::PowerValue;
+    private import ISQ::Mechanics::PressureValue;
+    private import ISQ::SpaceTime::CartesianSpatial3dCoordinateFrame;
+    private import ISQ::SpaceTime::SpeedValue;
+    private import ISQ::SpaceTime::CartesianVelocity3dCoordinateFrame;
+    private import ISQ::SpaceTime::AccelerationValue;
+    private import ISQ::SpaceTime::CartesianAcceleration3dCoordinateFrame;
+    private import ISQ::Thermodynamics::EnergyValue;
 
     /* ISO-80000-8 item 8-1 logarithmic frequency range */
     attribute def LogarithmicFrequencyRangeValue :> ScalarQuantityValue {

@@ -1,9 +1,9 @@
-standard library package ISQBase {
+standard library package Base {
     doc
     /*
      * International System of Quantities and Units
      * Generated on 2022-08-07T14:44:27Z from standard ISO/IEC 80000
-     * 
+     *
      * Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,
      * with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.
      */
@@ -190,11 +190,11 @@ standard library package ISQBase {
     attribute <isq> 'International System of Quantities': SystemOfQuantities {
         doc
         /*
-         * Declaration of the International System of Quantities (ISQ), 
+         * Declaration of the International System of Quantities (ISQ),
          * including its base quantities and symbols as specified in ISO 80000-1:2009.
          */
         attribute :>> baseQuantities = ( L, M, T, I, 'Θ', N, J );
-        
+
         attribute L: LengthValue[1];
         attribute M: MassValue[1];
         attribute T: DurationValue[1];

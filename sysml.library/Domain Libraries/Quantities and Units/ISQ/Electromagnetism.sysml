@@ -1,29 +1,29 @@
-standard library package ISQElectromagnetism {
+standard library package Electromagnetism {
     doc
     /*
      * International System of Quantities and Units
      * Generated on 2022-08-07T14:44:27Z from standard IEC-80000-6:2008 "Electromagnetism"
      * see also https://www.iso.org/obp/ui/#iso:std:iec:80000:-6:ed-1:v1:en,fr
-     * 
+     *
      * Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,
      * with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.
-     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is 
-     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system) 
+     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is
+     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)
      * or TensorMeasurementReference.
      */
 
     private import ScalarValues::Real;
     private import Quantities::*;
     private import MeasurementReferences::*;
-    private import ISQBase::*;
+    private import ISQ::Base::*;
 
     /* Quantity definitions referenced from other ISQ packages */
-    private import ISQMechanics::PowerValue;
-    private import ISQSpaceTime::AngularMeasureValue;
-    private import ISQThermodynamics::EnergyValue;
+    private import ISQ::Mechanics::PowerValue;
+    private import ISQ::SpaceTime::AngularMeasureValue;
+    private import ISQ::Thermodynamics::EnergyValue;
 
     /* IEC-80000-6 item 6-1 electric current */
-    /* See package ISQBase for the declarations of ElectricCurrentValue and ElectricCurrentUnit */
+    /* See package ISQ::Base for the declarations of ElectricCurrentValue and ElectricCurrentUnit */
 
     /* IEC-80000-6 item 6-2 electric charge */
     attribute def ElectricChargeValue :> ScalarQuantityValue {
@@ -709,7 +709,7 @@ standard library package ISQElectromagnetism {
          * quantity dimension: L^-2*I^1
          * measurement unit(s): A/m^2
          * tensor order: 0
-         * definition: `vec(J_D) = (del vec(D))/(del t)` where `vec(D)` is electric flux density (item 6-12) and `t` is time (ISO 80000-3, item 3-7) 
+         * definition: `vec(J_D) = (del vec(D))/(del t)` where `vec(D)` is electric flux density (item 6-12) and `t` is time (ISO 80000-3, item 3-7)
          * remarks: See IEC 60050-121, item 121-11-42.
          */
         attribute :>> num: Real;
@@ -734,7 +734,7 @@ standard library package ISQElectromagnetism {
          * quantity dimension: L^-2*I^1
          * measurement unit(s): A/m^2
          * tensor order: 1
-         * definition: `vec(J_D) = (del vec(D))/(del t)` where `vec(D)` is electric flux density (item 6-12) and `t` is time (ISO 80000-3, item 3-7) 
+         * definition: `vec(J_D) = (del vec(D))/(del t)` where `vec(D)` is electric flux density (item 6-12) and `t` is time (ISO 80000-3, item 3-7)
          * remarks: See IEC 60050-121, item 121-11-42.
          */
         attribute :>> isBound = false;

@@ -5,7 +5,6 @@
     "Quantities": "Quantities.sysml",
     "QuantityCalculations": "QuantityCalculations.sysml",
     "SI": "SI.sysml",
-    "SIPrefixes": "SIPrefixes.sysml",
     "TensorCalculations": "TensorCalculations.sysml",
     "Time": "Time.sysml",
     "USCustomaryUnits": "USCustomaryUnits.sysml",

@@ -1,21 +1,21 @@
-standard library package ISQChemistryMolecular {
+standard library package ChemistryMolecular {
     doc
     /*
      * International System of Quantities and Units
      * Generated on 2022-08-07T14:44:27Z from standard ISO-80000-9:2019 "Physical chemistry and molecular physics"
      * see also https://www.iso.org/obp/ui/#iso:std:iso:80000:-9:ed-2:v1:en
-     * 
+     *
      * Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,
      * with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.
-     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is 
-     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system) 
+     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is
+     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)
      * or TensorMeasurementReference.
      */
 
     private import ScalarValues::Real;
     private import Quantities::*;
     private import MeasurementReferences::*;
-    private import ISQBase::*;
+    private import ISQ::Base::*;
 
     /* Quantity definitions referenced from other ISQ packages */
     private import ISQSpaceTime::AngularMeasureValue;
@@ -38,7 +38,7 @@ standard library package ISQChemistryMolecular {
     }
 
     /* ISO-80000-9 item 9-2 amount of substance, number of moles */
-    /* See package ISQBase for the declarations of AmountOfSubstanceValue and AmountOfSubstanceUnit */
+    /* See package ISQ::Base for the declarations of AmountOfSubstanceValue and AmountOfSubstanceUnit */
 
     alias NumberOfMolesUnit for AmountOfSubstanceUnit;
     alias NumberOfMolesValue for AmountOfSubstanceValue;

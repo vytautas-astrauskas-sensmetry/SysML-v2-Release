@@ -4,24 +4,24 @@ standard library package ISQThermodynamics {
      * International System of Quantities and Units
      * Generated on 2022-08-07T14:44:27Z from standard ISO-80000-5:2019 "Thermodynamics"
      * see also https://www.iso.org/obp/ui/#iso:std:iso:80000:-5:ed-2:v1:en
-     * 
+     *
      * Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,
      * with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.
-     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is 
-     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system) 
+     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is
+     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)
      * or TensorMeasurementReference.
      */
 
     private import ScalarValues::Real;
     private import Quantities::*;
     private import MeasurementReferences::*;
-    private import ISQBase::*;
+    private import ISQ::Base::*;
 
     /* Quantity definitions referenced from other ISQ packages */
 
 
     /* ISO-80000-5 item 5-1 thermodynamic temperature, temperature */
-    /* See package ISQBase for the declarations of ThermodynamicTemperatureValue and ThermodynamicTemperatureUnit */
+    /* See package ISQ::Base for the declarations of ThermodynamicTemperatureValue and ThermodynamicTemperatureUnit */
 
     alias TemperatureUnit for ThermodynamicTemperatureUnit;
     alias TemperatureValue for ThermodynamicTemperatureValue;

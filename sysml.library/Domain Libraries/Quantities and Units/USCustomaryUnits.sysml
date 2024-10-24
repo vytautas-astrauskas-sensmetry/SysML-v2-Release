@@ -7,7 +7,7 @@ standard library package <USCU> USCustomaryUnits {
 	 */
 
     private import MeasurementReferences::*;
-    public import ISQ::*;
+    public import SI::ISQ::*;
     private import SI::*;
 
     attribute 'acre (based on US survey foot)' : AreaUnit { :>> unitConversion: ConversionByConvention { :>> referenceUnit = m^2; :>> conversionFactor = 4.046873E+03; :>> isExact = false; } }
@@ -229,10 +229,10 @@ standard library package <USCU> USCustomaryUnits {
 		/*
 		 * degree Fahrenheit interval scale for absolute (thermodynamic) temperature quantities
 		 *
-	     * The interval scale is defined with an explicit transformation with respect to 
+	     * The interval scale is defined with an explicit transformation with respect to
 	     * the kelvin thermodynamic temperature scale that specifies the zero shift.
 		 */
-		
+
 		:>> unit = '°F';
 		private attribute temperatureWaterAtFreezingPointInF: DefinitionalQuantityValue {
 			:>> num = 32.0;
@@ -248,7 +248,7 @@ standard library package <USCU> USCustomaryUnits {
 
         /* CoordinateFramePlacement (zero shift) w.r.t. the kelvin thermodynamic temperature scale */
         private attribute zeroDegreeFahrenheitInKelvin: ThermodynamicTemperatureValue = 229835/900 [K];
-        attribute zeroDegreeFahrenheitToKelvinShift : CoordinateFramePlacement :>> transformation { 
+        attribute zeroDegreeFahrenheitToKelvinShift : CoordinateFramePlacement :>> transformation {
         	:>> source = K; :>> origin = zeroDegreeFahrenheitInKelvin;
         }
 	}

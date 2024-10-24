@@ -1,21 +1,21 @@
-standard library package ISQLight {
+standard library package Light {
     doc
     /*
      * International System of Quantities and Units
      * Generated on 2022-08-07T14:44:27Z from standard ISO-80000-7:2019 "Light"
      * see also https://www.iso.org/obp/ui/#iso:std:iso:80000:-7:ed-2:v1:en
-     * 
+     *
      * Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,
      * with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.
-     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is 
-     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system) 
+     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is
+     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)
      * or TensorMeasurementReference.
      */
 
     private import ScalarValues::Real;
     private import Quantities::*;
     private import MeasurementReferences::*;
-    private import ISQBase::*;
+    private import ISQ::Base::*;
 
     /* Quantity definitions referenced from other ISQ packages */
     private import ISQThermodynamics::EnergyValue;
@@ -720,7 +720,7 @@ standard library package ISQLight {
     }
 
     /* ISO-80000-7 item 7-14 luminous intensity */
-    /* See package ISQBase for the declarations of LuminousIntensityValue and LuminousIntensityUnit */
+    /* See package ISQ::Base for the declarations of LuminousIntensityValue and LuminousIntensityUnit */
 
     /* ISO-80000-7 item 7-15 luminance */
     attribute def LuminanceValue :> ScalarQuantityValue {

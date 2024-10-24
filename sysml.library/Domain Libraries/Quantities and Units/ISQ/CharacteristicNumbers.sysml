@@ -1,21 +1,21 @@
-standard library package ISQCharacteristicNumbers {
+standard library package CharacteristicNumbers {
     doc
     /*
      * International System of Quantities and Units
      * Generated on 2022-08-07T19:40:39Z from standard ISO-80000-11:2019 "Characteristic numbers"
      * see also https://www.iso.org/obp/ui/#iso:std:iso:80000:-11:ed-2:v1:en
-     * 
+     *
      * Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,
      * with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.
-     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is 
-     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system) 
+     * Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is
+     * defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)
      * or TensorMeasurementReference.
      */
 
     private import ScalarValues::Real;
     private import Quantities::*;
     private import MeasurementReferences::*;
-    private import ISQBase::*;
+    private import ISQ::Base::*;
 
     /* ISO-80000-11 item 11-4.1 Reynolds number */
     attribute def ReynoldsNumberValue :> DimensionOneValue {
@@ -156,7 +156,7 @@ standard library package ISQCharacteristicNumbers {
     alias thomsonNumber for strouhalNumber;
 
     /* ISO-80000-11 item 11-4.9 drag coefficient */
-    /* Refer to declaration for DragCoefficient in ISQMechanics item 4-23.4 drag coefficient */
+    /* Refer to declaration for DragCoefficient in ISQ::Mechanics item 4-23.4 drag coefficient */
 
     /* ISO-80000-11 item 11-4.10 Bagnold number */
     attribute def BagnoldNumberValue :> DimensionOneValue {
@@ -1242,7 +1242,7 @@ standard library package ISQCharacteristicNumbers {
          * measurement unit(s): 1
          * tensor order: 0
          * definition: quotient of gravitational forces and viscous forces for gas bubbles in a liquid, or liquid drops in a gas, expressed by `Mo = (g*η^4)/(ρ*γ^3)*(ρ_b/ρ - 1)`, where `g` is acceleration of free fall (ISO 80000-3), `η` is dynamic viscosity (ISO 80000-4) of the surrounding fluid, `ρ` is mass density (ISO 80000-4) of the surrounding fluid, `γ` is surface tension (ISO 80000-4) of the interface, and `ρ_b` is mass density (ISO 80000-4) of the bubble or drop
-         * remarks: The Morton number is used to determine the shape of bubbles or drops. The Morton number is also given by `Mo = We^3*Fr^-2*Re^-4`, where `We` is the Weber number (item 11-4.5), `Fr` is the Froude number (item 11-4.3), and `Re` is the Reynolds number (item 11-4.1). 
+         * remarks: The Morton number is used to determine the shape of bubbles or drops. The Morton number is also given by `Mo = We^3*Fr^-2*Re^-4`, where `We` is the Weber number (item 11-4.5), `Fr` is the Froude number (item 11-4.3), and `Re` is the Reynolds number (item 11-4.1).
          */
     }
     attribute mortonNumber: MortonNumberValue :> scalarQuantities;
@@ -1431,7 +1431,7 @@ standard library package ISQCharacteristicNumbers {
          * measurement unit(s): 1
          * tensor order: 0
          * definition: quotient of kinematic viscosity and thermal diffusivity for a fluid, expressed by `Pr = ν/a`, where `ν` is kinematic viscosity (ISO 80000-4), and `a` is thermal diffusivity (ISO 80000-5)
-         * remarks: The Prandtl number also represents the quotient of heat produced by viscosity and heat transferred by thermal diffusivity. The mass transfer analogue of the Prandtl number is the Schmidt number (item 11-7.2). The Prandtl number is also given by `Pr = (Pe)/(Re)`; where `Pe` is the Péclet number (item 11-5.2), and `Re` is the Reynolds number (item 11-4.1). 
+         * remarks: The Prandtl number also represents the quotient of heat produced by viscosity and heat transferred by thermal diffusivity. The mass transfer analogue of the Prandtl number is the Schmidt number (item 11-7.2). The Prandtl number is also given by `Pr = (Pe)/(Re)`; where `Pe` is the Péclet number (item 11-5.2), and `Re` is the Reynolds number (item 11-4.1).
          */
     }
     attribute prandtlNumber: PrandtlNumberValue :> scalarQuantities;
@@ -1465,7 +1465,7 @@ standard library package ISQCharacteristicNumbers {
          * measurement unit(s): 1
          * tensor order: 0
          * definition: quotient of thermal diffusivity and diffusion coefficient for heat transfer in a fluid, expressed by `Le = a/D`, where `a` is thermal diffusivity (ISO 80000-5), and `D` is diffusion coefficient (ISO 80000-9)
-         * remarks: The Lewis number is also given by `Le = (Sc)/(Pr)`, where `Sc` is the Schmidt number (item 11-7.2), and `Pr` is the Prandtl number (item 11-7.1). Compare with item 11-5.2. The Lewis number is sometimes defined as reciprocal of this quantity. 
+         * remarks: The Lewis number is also given by `Le = (Sc)/(Pr)`, where `Sc` is the Schmidt number (item 11-7.2), and `Pr` is the Prandtl number (item 11-7.1). Compare with item 11-5.2. The Lewis number is sometimes defined as reciprocal of this quantity.
          */
     }
     attribute lewisNumber: LewisNumberValue :> scalarQuantities;
@@ -1796,7 +1796,7 @@ standard library package ISQCharacteristicNumbers {
          * measurement unit(s): 1
          * tensor order: 0
          * definition: quotient of magnetic forces and inertia forces in an electrically conducting liquid, expressed by `Stw = (B^2*l*σ)/(v*ρ)`, where `B` is magnetic flux density (IEC 80000-6), `l` is characteristic length (ISO 80000-3), `σ` is electrical conductivity (IEC 80000-6), `v` is characteristic speed (ISO 80000-3), and `ρ` is mass density (ISO 80000-4)
-         * remarks: The Stuart number sometimes is called magnetic force parameter. Sometimes the square root is wrongly used. The Stuart number is also given by `Stw = (Ha^2)/(Re)`, where `Ha` is the Hartmann number, and `Re` is the Reynolds number. 
+         * remarks: The Stuart number sometimes is called magnetic force parameter. Sometimes the square root is wrongly used. The Stuart number is also given by `Stw = (Ha^2)/(Re)`, where `Ha` is the Hartmann number, and `Re` is the Reynolds number.
          */
     }
     attribute stuartNumber: StuartNumberValue :> scalarQuantities;
