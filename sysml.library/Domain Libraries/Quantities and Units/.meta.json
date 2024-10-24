@@ -1,14 +1,14 @@
 {
   "index": {
-    "ISQ": "ISQ",
-    "MeasurementReferences": "MeasurementReferences.sysml",
-    "Quantities": "Quantities.sysml",
-    "QuantityCalculations": "QuantityCalculations.sysml",
-    "SI": "SI.sysml",
-    "TensorCalculations": "TensorCalculations.sysml",
-    "Time": "Time.sysml",
-    "USCustomaryUnits": "USCustomaryUnits.sysml",
-    "VectorCalculations": "VectorCalculations.sysml"
+    "ISQ": "project.sysml",
+    "MeasurementReferences": "project.sysml",
+    "Quantities": "project.sysml",
+    "QuantityCalculations": "project.sysml",
+    "SI": "project.sysml",
+    "TensorCalculations": "project.sysml",
+    "Time": "project.sysml",
+    "USCustomaryUnits": "project.sysml",
+    "VectorCalculations": "project.sysml"
   },
   "created": "2022-12-16T00:00:00Z",
   "metamodel": "https://www.omg.org/spec/SysML/20240201"
