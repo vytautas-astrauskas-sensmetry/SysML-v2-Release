@@ -1,4 +1,9 @@
 standard library package Temperature {
+
+    private import ScalarValues::Real;
+	private import Quantities::*;
+	private import MeasurementReferences::*;
+
     /* Additional quantity declarations */
 
     attribute def TemperatureDifferenceValue :> ScalarQuantityValue {

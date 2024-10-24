@@ -4,10 +4,6 @@ standard library package ISQ {
      * International system of quantities (ISQ), as defined in ISO/IEC 80000
      */
 
-	private import ScalarValues::Real;
-	private import Quantities::*;
-	private import MeasurementReferences::*;
-
 	public extern package Base;                  // ISO/IEC 80000 base quantities and general concepts
     public extern package SpaceTime;             // ISO 80000-3 "Space and Time"
     public extern package Mechanics;             // ISO 80000-4 "Mechanics"
