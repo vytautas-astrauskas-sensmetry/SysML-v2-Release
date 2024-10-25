@@ -1,5 +1,9 @@
 /* Additional quantity declarations */
 
+private import ScalarValues::Real;
+private import Quantities::*;
+private import MeasurementReferences::*;
+
 attribute def TemperatureDifferenceValue :> ScalarQuantityValue {
     doc
     /*
