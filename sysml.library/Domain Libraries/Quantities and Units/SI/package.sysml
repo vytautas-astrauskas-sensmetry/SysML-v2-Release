@@ -7,9 +7,11 @@ standard library package SI {
 	 * Note 2: This is a representative but not yet complete list of measurement units.
 	 */
 
-    private import MeasurementReferences::*;
-    private import ISQ::*;
     public extern package Prefixes;
+
+    private import MeasurementReferences::*;
+    public import ISQ::*;
+    public import Prefixes::*;
 
     /*
      * SI simple unit needed in support of creation of the base units

@@ -18,4 +18,17 @@ standard library package ISQ {
     public extern package Information;           // IEC 80000-13 "Information science and technology"
     public extern package Temperature;
 
+    public import Base::*;
+    public import SpaceTime::*;
+    public import Mechanics::*;
+    public import Thermodynamics::*;
+    public import Electromagnetism::*;
+    public import Light::*;
+    public import Acoustics::*;
+    public import ChemistryMolecular::*;
+    public import AtomicNuclear::*;
+    public import CharacteristicNumbers::*;
+    public import CondensedMatter::*;
+    public import Information::*;
+    public import Temperature::*;
 }
