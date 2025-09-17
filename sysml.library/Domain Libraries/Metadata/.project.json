@@ -4,15 +4,15 @@
   "description": "Standard metadata domain library for the Systems Modeling Language (SysML)",
   "usage": [
     {
-      "resource": "urn:kpar:Semantic-Library",
+      "resource": "urn:kpar:semantic-library",
       "versionConstraint": "1.0.0"
     },
     {
-      "resource": "urn:kpar:Data-Type-Library",
+      "resource": "urn:kpar:data-type-library",
       "versionConstraint": "1.0.0"
     },
     {
-      "resource": "urn:kpar:Systems-Library",
+      "resource": "urn:kpar:systems-library",
       "versionConstraint": "2.0.0"
     }
   ]

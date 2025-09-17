@@ -4,11 +4,11 @@
   "description": "Standard semantic library for the Kernel Modeling Language (KerML)",
   "usage": [
     {
-      "resource": "urn:kpar:Data-Type-Library",
+      "resource": "urn:kpar:data-type-library",
       "versionConstraint": "1.0.0"
     },
     {
-      "resource": "urn:kpar:Function-Library",
+      "resource": "urn:kpar:function-library",
       "versionConstraint": "1.0.0"
     }
   ]
